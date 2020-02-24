@@ -1,0 +1,219 @@
+body,h1,h2,h3,h4,h5,h6 {
+  font-family: "Lato", sans-serif;
+}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+.container{
+  display: center;
+  padding: 20px 100px 0px 100px;
+}
+.about{
+  padding: 30px 18px 100px 18px;
+
+}
+
+.button{
+  border-radius: 5px;
+  background-color: white; 
+  color: black;
+  text-align: center;
+  font-size: 15px;
+
+  padding: 10px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.default {
+  border-color: #e7e7e7;
+  color: black;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.default:hover {
+  background: #e7e7e7;
+}
+
+.skills{
+  display: center;
+  background-color: black;
+  padding: 30px 100px 100px 80px
+}
+
+.title {
+    opacity: 0;
+    animation: show 0.35s forwards ease-in-out 0.5s;
+} 
+
+@keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+} 
+@keyframes show  {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.portfolio{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.portfolio-container{
+  padding-bottom: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.hover{
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+
+.image1, .image2, .image3{
+  width: 100%;
+  height: 500px;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image1, .image2:hover, .image3:hover {
+  opacity: 0.5;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text{
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+
+}
+
+.portfolio-intro{
+  position: absolute;
+  top: 1px;
+  width: 300px;
+  border-radius: 2px;
+  background-color: #000000; 
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Courier New", Courier, monospace;
+  padding:10px;
+  background: rgb(0, 0, 0); /* fallback color */
+  background: rgba(0, 0, 0, 0.7);
+
+}
+
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('image/pic1.jpg');
+  min-height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.centered {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 50px;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 1.5s steps(20, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 30% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+.contact{
+  text-align: center;
+  font-size: 20px;
+  background-color: black;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1300px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}

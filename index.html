@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<title>Kim Ney Choong</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1" id="home">
+  	<span class = "centered">HELLO WORLD!</span>
+</div>
+
+<!-- Container (About Section) -->
+<div class="container" id="about">
+  <h3 style="text-align:center;">A BIT ABOUT ME</h3>
+    <div class = "about">
+      <img src="image/profile.jpg" alt="Photo of Me" width="300" height="330" style="float: left; margin-right: 20px;">
+	  <p>
+	  	Hello! My name is Kim and I'm currently a undergraduate in the University of Minnesota-Twin Cities, majoring in Psychology and Computer Science. I'm always curious about the thought processes of human behavior but at the same time fascinated with what a programmer can do. <br><br>
+
+	  	I'm now working at the Minnesota Traffic Observatory as a research assistant to improve the management of transportation network.
+	  	I enjoy building things on the Internet. Being a web developer is what I'm looking forward to after graduation.<br><br>
+
+	  	<button class = "button"><a href="Resume.pdf" style="color: black;"><span>RESUME</span></a></button>
+	  </p>
+    </div>
+</div>
+
+<!-- Container (Skills Section) -->
+  <div class = "skills" onmouseover = "myProgress()">
+  <p style="text-align: center; font-size: 25px; font-family: Courier New, Courier, monospace";>My Skills</p>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Coding</p>
+	<div class="progress">
+	  <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id = "bar1" >
+	  	<span class="title">75%</span>
+	  </div>
+	</div><br>
+	  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+	<div class="progress">
+	  <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id = "bar2">
+	  <span class="title">70%</span>
+	  </div>
+	</div><br>
+	  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
+	<div class="progress">
+	  <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="bar3">
+	  <span class="title">40%</span>
+	  </div>
+	</div>
+</div>
+
+
+
+<!-- Container (Portfolio Section) -->
+<div class="container portfolio" id="portfolio">
+  <h3 style="text-align: center;">MY WORK</h3>
+  <p class="w3-center"><em>Here are some of my latest work.<br> Click on the images to find out more!</em></p><br>
+  <div class = "portfolio-container">
+  	<img src = "image/pic1.jpg" class = "hover image1" >
+  	<div class = "middle">
+  		<div class = "text"> Constructed and designed my own portfolio website using JavaScript, HTML, and CSS.</div>
+  		<a href="https://github.com/kimneychoong/kimneychoong.github.io/tree/master" class = "fa fa-github" style="text-decoration: none; color: black; font-size: 36px; position: absolute; left: 200px"></a>
+  	</div>
+  	<p class="portfolio-intro" style="right: 1px;"> Personal Portfolio </p>
+  </div>
+    <div class = "portfolio-container">
+  	<img src = "image/pic2.jpg" class = "hover image2" >
+  	<div class = "middle">
+  		<div class = "text"> Incoporated Google APIs to build a navigation map that enable POI Click Event and route calculation </div>
+   		<a href="https://github.com/kimneychoong/Navigator-Application" class = "fa fa-github" style="text-decoration: none; color: black; font-size: 36px; position: absolute; left: 200px"></a>
+  	</div>
+  	<p class="portfolio-intro" style="left: 1px; width: 430px;"> Navigator Application</p>
+  </div>
+    <div class = "portfolio-container">
+  	<img src = "image/pic3.jpg" class = "hover image3" >
+  	<div class = "middle">
+  		<div class = "text">Developed a Python program that extracts data from the PostgreSQL database server and transform it into a text file to assist in data migration</div>
+  		<a href="https://github.com/kimneychoong" class = "fa fa-github" style="text-decoration: none; color: black; font-size: 36px; position: absolute; left: 200px"></a>
+  	</div>
+  	<p class="portfolio-intro" style="right: 1px;">Data Migration</p>
+  </div>
+ </div>
+
+<div class = "contact" id ="contact">
+	<h3>CONTACT</h3>
+	<i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right" ></i> Minneapolis, US<br>
+   	<i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: kimneychoong@gmail.com<br>
+   	<button class="button default"><a href = "mailto:kimneychoong@gmail.com" style="color: black; text-decoration: none;">Say Hello</button></a>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 ">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href = "https://www.facebook.com/choongkimney" class="fa fa-facebook-official w3-hover-opacity"></a>
+    <a href = "https://www.instagram.com/choongkimney/" class="fa fa-instagram w3-hover-opacity"></a>
+    <a href = "" class="fa fa-linkedin w3-hover-opacity"></a>
+  </div>
+  <p>Designed by Kim Ney Choong</p>
+</footer>
+ 
+</body>
+<script src = script.js></script>
+</html>
+
