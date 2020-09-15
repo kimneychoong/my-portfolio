@@ -262,7 +262,7 @@ body, html {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  font-size: 70px;
+  font-size: 65px;
   font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange; /* The typwriter cursor */
