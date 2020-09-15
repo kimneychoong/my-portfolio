@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="style.css">
 
 <body>
@@ -40,17 +40,22 @@
 
 <!-- Container (About Section) -->
 <div class="container" id="about">
-  <h3 style="text-align:center;">A BIT ABOUT ME</h3>
     <div class = "about">
-      <img src="image/profile.jpg" alt="Photo of Me" width="300" height="330" style="float: left; margin-right: 20px;">
-	  <p>
-	  	Hello! My name is Kim and I'm currently a undergraduate in the University of Minnesota-Twin Cities, majoring in Psychology and Computer Science. I'm always curious about the thought processes of human behavior but at the same time fascinated with what a programmer can do. <br><br>
-
-	  	I'm now working at the Minnesota Traffic Observatory as a research assistant to improve the management of transportation network.
-	  	I enjoy building things on the Internet. Being a web developer is what I'm looking forward to after graduation.<br><br>
-
-	  	<button class = "button"><a href="Resume.pdf" style="color: black;"><span>RESUME</span></a></button>
-	  </p>
+      <img src="image/profile.jpg" alt="Photo of Me" width="300" height="400" style="float: left; margin-right: 40px;">
+	  <div id="intro">
+		<h3 style="text-align:center;">A BIT ABOUT ME</h3>
+		<p>
+			Hello! My name is Kim and I'm an undergraduate student in the University of Minnesota-Twin Cities, majoring in Psychology and Computer Science. 
+			I enjoy building things on the Internet and I'm passionate about developing websites and web applications that provide intuitive and responsive user
+			interfaces.
+			<br><br>
+			This summer, I had the opportunity to intern at a startup company that is based on Singapore and Malaysia. During the course of internship, I worked with
+			a team of highly experienced individuals to build a digital ordering platform for a Japanese franchise store to help reduced workload for 
+			front-counter workers. I also had the chance to learn about AWS technologies and services.
+			<br>
+			<button class = "button"><a href="Resume.pdf" style="color: black;"><span>RESUME</span></a></button>
+		</p>
+	  </div>
     </div>
 </div>
 
@@ -60,19 +65,19 @@
   <p class="w3-wide"><i class="fa fa-laptop"></i>Coding</p>
 	<div class="progress">
 	  <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id = "bar1" >
-	  	<span class="title">75%</span>
+	  	
 	  </div>
 	</div><br>
 	  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
 	<div class="progress">
 	  <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id = "bar2">
-	  <span class="title">70%</span>
+	  
 	  </div>
 	</div><br>
 	  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
 	<div class="progress">
 	  <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="bar3">
-	  <span class="title">40%</span>
+	  
 	  </div>
 	</div>
 </div>
@@ -81,32 +86,61 @@
 
 <!-- Container (Portfolio Section) -->
 <div class="container portfolio" id="portfolio">
-  <h3 style="text-align: center;">MY WORK</h3>
+  <h3 style="text-align: center;">PROJECTS</h3>
   <p class="w3-center"><em>Here are some of my latest work.<br> Click on the images to find out more!</em></p><br>
-  <div class = "portfolio-container">
-  	<img src = "image/pic1.jpg" class = "hover image1" >
-  	<div class = "middle">
-  		<div class = "text"> Constructed and designed my own portfolio website using JavaScript, HTML, and CSS.</div>
-  		<a href="https://github.com/kimneychoong/my-portfolio" class = "fa fa-github" style="text-decoration: none; color: black; font-size: 36px; position: absolute; left: 200px"></a>
+  	<div class = "portfolio-container1">
+		<img src = "image/pic1.jpg" class = "hover image1" >
+		<div class = "middle1">
+			<div class = "text"> Constructed and designed my own portfolio website using JavaScript, HTML, and CSS.</div>
+			<div class = "link">
+				<a href="https://github.com/kimneychoong/my-portfolio" class = "fa fa-github"></a>
+				<a href="https://kimneychoong.github.io/my-portfolio/" class = "fa fa-link"></a>
+			</div>
+		</div>
+  		<p class="portfolio-intro" style="right: 1px;"> Personal Portfolio </p>
   	</div>
-  	<p class="portfolio-intro" style="right: 1px;"> Personal Portfolio </p>
-  </div>
-    <div class = "portfolio-container">
-  	<img src = "image/pic2.jpg" class = "hover image2" >
-  	<div class = "middle">
-  		<div class = "text"> Incoporated Google APIs to build a navigation map that enable POI Click Event and route calculation </div>
-   		<a href="https://github.com/kimneychoong/Navigator-Application" class = "fa fa-github" style="text-decoration: none; color: black; font-size: 36px; position: absolute; left: 200px"></a>
-  	</div>
-  	<p class="portfolio-intro" style="left: 1px; width: 430px;"> Navigator Application</p>
-  </div>
-    <div class = "portfolio-container">
-  	<img src = "image/pic3.jpg" class = "hover image3" >
-  	<div class = "middle">
-  		<div class = "text">Developed a Python program that extracts data from the PostgreSQL database server and transform it into a text file to assist in data migration</div>
-  		<a href="https://github.com/kimneychoong" class = "fa fa-github" style="text-decoration: none; color: black; font-size: 36px; position: absolute; left: 200px"></a>
-  	</div>
-  	<p class="portfolio-intro" style="right: 1px;">Data Migration</p>
-  </div>
+	<div class = "portfolio-container2">
+		<img src = "image/pic4.jpeg" class = "hover image2" >
+		<div class = "middle2">
+			<div class = "text">Similar to Patatap. Press on any keys to play sounds!</div>
+			<div class = "link">
+				<a href="https://github.com/kimneychoong/PatatapClone" class = "fa fa-github"></a>
+				<a href="https://kimneychoong.github.io/PatatapClone/" class = "fa fa-link"></a>
+			</div>
+		</div>
+		<p class="portfolio-intro" style="left: 1px;">Patatap Clone</p>
+	</div>
+	<div class = "portfolio-container3">
+		<img src = "image/pic5.jpg" class = "hover image3" >
+		<div class = "middle3">
+			<div class = "text">Can you guess the RGB Color?</div>
+			<div class = "link">
+				<a href="https://github.com/kimneychoong/Color_Guessing-Game" class = "fa fa-github"></a>
+				<a href="https://kimneychoong.github.io/Color_Guessing-Game/" class = "fa fa-link"></a>
+			</div>
+		</div>
+		<p class="portfolio-intro" style="right: 1px;">RGB Guessing Game</p>
+		</div>
+		<div class = "portfolio-container4">
+			<img src = "image/pic2.jpg" class = "hover image4" >
+			<div class = "middle4">
+				<div class = "text"> Incoporated Google APIs to build a navigation map that enable POI Click Event and route calculation </div>
+				<div class = "link">
+					<a href="https://github.com/kimneychoong/Navigator-Application" class = "fa fa-github" ></a>
+				</div>
+			</div>
+			<p class="portfolio-intro" style="left: 1px"> Navigator App</p>
+		</div>
+		<div class = "portfolio-container5">
+			<img src = "image/pic3.jpg" class = "hover image5" >
+			<div class = "middle5">
+				<div class = "text">Developed a Python program that extracts data from the PostgreSQL database server and transform it into a text file to assist in data migration</div>
+				<div class = "link">
+					<a href="https://github.com/kimneychoong" class = "fa fa-github"></a>			
+				</div>
+			</div>
+			<p class="portfolio-intro" style="right: 1px;">Data Migration</p>
+		</div>
  </div>
 
 <div class = "contact" id ="contact">
