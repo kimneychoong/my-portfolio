@@ -9,16 +9,15 @@ body, html {
 
 .container{
   display: center;
-  padding: 20px 100px 0px 100px;
+  padding: 120px 120px 100px 100px;
 }
 .about{
-  margin:100px auto;
+  margin:auto;
 }
 
 #intro{
   text-align: justify;
   text-justify: inter-word;
-  margin-left: ;
 }
 
 .button{
@@ -222,15 +221,48 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 
+  -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 5s; /* Firefox < 16 */
+        -ms-animation: fadein 5s; /* Internet Explorer */
+         -o-animation: fadein 5s; /* Opera < 12.1 */
+            animation: fadein 5s;
+
+}
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
 .centered {
   position: absolute;
-  top: 55%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  font-size: 50px;
+  font-size: 70px;
   font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange; /* The typwriter cursor */
@@ -238,14 +270,14 @@ body, html {
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   animation: 
-    typing 1.5s steps(20, end),
-    blink-caret .5s step-end infinite;
+    typing 1.6s steps(20, end),
+    blink-caret 1s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
-  to { width: 30% }
+  to { width: 40% }
 }
 
 /* The typewriter cursor effect */
@@ -267,7 +299,7 @@ body, html {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1300px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
+  .bgimg-1 {
     background-attachment: scroll;
     min-height: 400px;
   }
