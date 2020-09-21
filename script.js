@@ -22,9 +22,15 @@ function toggleFunction() {
 function myProgress(){
 	document.getElementById("bar1").style.maxWidth = "75%";
 	document.getElementById("bar1").style.animation = "progress 1.5s ease-in-out forwards ";
-	document.getElementById("bar2").style.maxWidth = "70%";
+	document.getElementById("bar2").style.maxWidth = "80%";
 	document.getElementById("bar2").style.animation = "progress 1.5s ease-in-out forwards ";
-	document.getElementById("bar3").style.maxWidth = "40%";
-	document.getElementById("bar3").style.animation = "progress 1.5s ease-in-out forwards ";	
+	document.getElementById("bar3").style.maxWidth = "75%";
+    document.getElementById("bar3").style.animation = "progress 1.5s ease-in-out forwards ";	
+    document.getElementById("bar4").style.maxWidth = "70%";
+    document.getElementById("bar4").style.animation = "progress 1.5s ease-in-out forwards ";
+    document.getElementById("bar5").style.maxWidth = "65%";
+    document.getElementById("bar5").style.animation = "progress 1.5s ease-in-out forwards ";
+    document.getElementById("bar6").style.maxWidth = "60%";
+	document.getElementById("bar6").style.animation = "progress 1.5s ease-in-out forwards ";
 }
 
